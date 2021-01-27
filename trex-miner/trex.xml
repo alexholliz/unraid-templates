@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>trex-miner</Name>
+  <Repository>ptrfrll/nv-docker-trex</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/trexminer/T-Rex</Project>
+  <Overview>T-Rex is a versatile cryptocurrency mining software. It supports a variety of algorithms and we, as developers, are trying to do our best to make it as fast and as convenient to use as possible.</Overview>
+  <Category>Tools:</Category>
+  <WebUI>http://[IP]:[PORT:4067]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/PTRFRLL/unraid-templates/master/trex-miner/trex.png</Icon>
+  <ExtraParams>--runtime=nvidia</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1611780187</DateInstalled>
+  <DonateText>Buy me a beer</DonateText>
+  <DonateLink>https://www.paypal.me/ptrfrll</DonateLink>
+  <Description>T-Rex is a versatile cryptocurrency mining software. It supports a variety of algorithms and we, as developers, are trying to do our best to make it as fast and as convenient to use as possible.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>4067</HostPort>
+        <ContainerPort>4067</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data/>
+  <Environment/>
+  <Labels/>
+  <Config Name="Host Port 1" Target="4067" Default="" Mode="tcp" Description="Container Port: 4067" Type="Port" Display="always" Required="false" Mask="false">4067</Config>
+</Container>

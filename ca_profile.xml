@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Maintainer>
+  <Icon>https://raw.githubusercontent.com/PTRFRLL/unraid-templates/master/assets/icon.png</Icon>
+  <Profile>
+    Giving back to the Unraid community, one application at a time.
+  </Profile>
+  <DonateLink>https://www.paypal.me/ptrfrll</DonateLink>
+  <DonateText>Buy me a coffee/beer</DonateText>
+  <WebPage>https://github.com/PTRFRLL</WebPage>
+</Maintainer>
