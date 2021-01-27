@@ -11,7 +11,7 @@
   <Project>https://github.com/trexminer/T-Rex</Project>
   <Overview>T-Rex is a versatile cryptocurrency mining software. It supports a variety of algorithms and we, as developers, are trying to do our best to make it as fast and as convenient to use as possible.&#xD;
 &#xD;
-Requires nvidia-docker (either LinuxServer.io or new 6.9 version)</Overview>
+Requires Unraid-nvidia (now deprecated) or nvidia-driver plugin (6.9+)</Overview>
   <Category>Tools:</Category>
   <WebUI>http://[IP]:[PORT:4067]</WebUI>
   <TemplateURL/>
@@ -52,10 +52,16 @@ Requires nvidia-docker (either LinuxServer.io or new 6.9 version)</Description>
       <Name>WORKER</Name>
       <Mode/>
     </Variable>
+    <Variable>
+      <Value>ethash</Value>
+      <Name>ALGO</Name>
+      <Mode/>
+    </Variable>
   </Environment>
   <Labels/>
   <Config Name="WebUI" Target="4067" Default="" Mode="tcp" Description="Container Port: 4067" Type="Port" Display="always" Required="false" Mask="false">4067</Config>
-  <Config Name="Wallet Address" Target="WALLET" Default="" Mode="" Description="Container Variable: WALLET" Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="Server" Target="SERVER" Default="" Mode="" Description="Container Variable: SERVER" Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="Worker Name" Target="WORKER" Default="" Mode="" Description="Container Variable: WORKER" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Wallet Address" Target="WALLET" Default="" Mode="" Description="Username/Wallet address" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Server" Target="SERVER" Default="" Mode="" Description="URL of the mining pool" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Worker Name" Target="WORKER" Default="" Mode="" Description="Worker name" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="algorithm" Target="ALGO" Default="ethash" Mode="" Description="Specify the hash algorithm" Type="Variable" Display="always" Required="true" Mask="false">ethash</Config>
 </Container>
