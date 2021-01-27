@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support/>
+  <Support>https://forums.unraid.net/topic/101947-support-ptrfrll-docker-images</Support>
   <Project>https://github.com/trexminer/T-Rex</Project>
   <Overview>T-Rex is a versatile cryptocurrency mining software. It supports a variety of algorithms and we, as developers, are trying to do our best to make it as fast and as convenient to use as possible.&#xD;
 &#xD;
