@@ -63,6 +63,11 @@ Requires Unraid-nvidia (now deprecated) or nvidia-driver plugin (6.9+)</Descript
       <Name>ALGO</Name>
       <Mode/>
     </Variable>
+    <Variable>
+      <Value/>
+      <Name>API_PASSWORD</Name>
+      <Mode/>
+    </Variable>
   </Environment>
   <Labels/>
   <Config Name="WebUI" Target="4067" Default="" Mode="tcp" Description="Container Port: 4067" Type="Port" Display="always" Required="false" Mask="false">4067</Config>
@@ -71,4 +76,5 @@ Requires Unraid-nvidia (now deprecated) or nvidia-driver plugin (6.9+)</Descript
   <Config Name="Worker Name" Target="WORKER" Default="" Mode="" Description="Worker name" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="algorithm" Target="ALGO" Default="ethash" Mode="" Description="Specify the hash algorithm" Type="Variable" Display="always" Required="true" Mask="false">ethash</Config>
   <Config Name="Config" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/trex</Config>
+  <Config Name="webUI Password" Target="API_PASSWORD" Default="" Mode="" Description="Must be 8-64 characters long, without spaces, and must contain at least one digit, lowercase, and uppercase letters." Type="Variable" Display="always" Required="true" Mask="true"/>
 </Container>
