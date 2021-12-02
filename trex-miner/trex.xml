@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>trex-miner</Name>
-  <Repository>ptrfrll/nv-docker-trex</Repository>
+  <Repository>ghcr.io/ptrfrll/nv-docker-trex</Repository>
   <Registry/>
   <Network>bridge</Network>
   <MyIP/>
@@ -11,7 +11,7 @@
   <Project>https://github.com/trexminer/T-Rex</Project>
   <Overview>T-Rex is a versatile cryptocurrency mining software. It supports a variety of algorithms and we, as developers, are trying to do our best to make it as fast and as convenient to use as possible.&#xD;
 &#xD;
-Requires Unraid-nvidia (now deprecated) or nvidia-driver plugin (6.9+)</Overview>
+Requires nvidia-driver plugin (6.9+)</Overview>
   <Category>Tools: Crypto:</Category>
   <WebUI>http://[IP]:[PORT:4067]</WebUI>
   <TemplateURL/>
@@ -24,7 +24,7 @@ Requires Unraid-nvidia (now deprecated) or nvidia-driver plugin (6.9+)</Overview
   <DonateLink>https://www.paypal.me/ptrfrll</DonateLink>
   <Description>T-Rex is a versatile cryptocurrency mining software. It supports a variety of algorithms and we, as developers, are trying to do our best to make it as fast and as convenient to use as possible.&#xD;
 &#xD;
-Requires Unraid-nvidia (now deprecated) or nvidia-driver plugin (6.9+)</Description>
+Requires nvidia-driver plugin (6.9+)</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
