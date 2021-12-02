@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>trex-miner</Name>
-  <Repository>ghcr.io/ptrfrll/nv-docker-trex</Repository>
+  <Repository>ptrfrll/nv-docker-trex</Repository>
   <Registry/>
   <Network>bridge</Network>
   <MyIP/>
