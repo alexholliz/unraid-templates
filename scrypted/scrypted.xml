@@ -11,9 +11,9 @@
   <Project>https://github.com/koush/scrypted</Project>
   <Overview>Scrypted Home Automation</Overview>
   <Category>HomeAutomation:</Category>
-  <WebUI>https://[IP]:[PORT:9443]/</WebUI>
+  <WebUI>https://[IP]:[PORT:]/</WebUI>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/PTRFRLL/unraid-templates/master/scrypted/icon.png</Icon>
+  <Icon>https://raw.githubusercontent.com/alexholliz/unraid-templates/master/scrypted/icon.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
@@ -25,8 +25,8 @@
     <Mode>host</Mode>
     <Publish>
       <Port>
-        <HostPort>9443</HostPort>
-        <ContainerPort>9443</ContainerPort>
+        <HostPort>10443</HostPort>
+        <ContainerPort>10443</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
     </Publish>
@@ -41,5 +41,5 @@
   <Environment/>
   <Labels/>
   <Config Name="Appdata" Target="/server/volume" Default="" Mode="rw" Description="Container Path: /server/volume" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/scrypted</Config>
-  <Config Name="WebUI" Target="9443" Default="9443" Mode="tcp" Description="Container Port: " Type="Port" Display="always" Required="false" Mask="false">9443</Config>
+  <Config Name="WebUI" Target="10443" Default="10443" Mode="tcp" Description="Container Port: " Type="Port" Display="always" Required="false" Mask="false">10443</Config>
 </Container>
